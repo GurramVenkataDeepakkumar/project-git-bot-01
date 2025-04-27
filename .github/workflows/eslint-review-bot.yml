@@ -19,6 +19,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install node-fetch (required by eslint-review-bot.js)
+        run: npm install node-fetch@2
+
       - name: Run ESLint and Review Bot
         run: |
           npx eslint . -f json -o eslint-report.json
