@@ -98,12 +98,12 @@ function App(): React.JSX.Element {
       </Section>
       <Section title="Debug">
         <DebugInstructions />
+        <Text>{undeclaredVariable}</Text>
       </Section>
       <Section title="Learn More">
         Read the docs to discover what to do next:
       </Section>
       <LearnMoreLinks />
-
       {/* Intentional ESLint Errors */}
       <Text>{undeclaredVariable}</Text> {/* ❌ 'undeclaredVariable' is not defined */}
       {console.log('Debugging...')}      {/* ❌ Unexpected console statement */}
