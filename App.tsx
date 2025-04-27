@@ -95,6 +95,7 @@ function App(): React.JSX.Element {
           </Section>
           <Section title="See Your Changes">
             <ReloadInstructions />
+            <Text>{message}</Text>
           </Section>
           <Section title="Debug">
             <DebugInstructions />
@@ -113,6 +114,7 @@ const styles = StyleSheet.create({
   sectionContainer: {
     marginTop: 32,
     paddingHorizontal: 24,
+
   },
   sectionTitle: {
     fontSize: 24,
